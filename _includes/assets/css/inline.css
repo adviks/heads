@@ -1,7 +1,7 @@
 :root {
-	--primary: blue;
-	--secondary: white;
-	--background: #FFF0EB;
+	--primary: black;
+	--secondary: grey;
+	--background: #FFF;
 }
 
 *, *:before, *:after {
@@ -24,6 +24,7 @@ body {
 
 main {
 	max-width: 37.5em;
+	margin: 0 auto;
 }
 
 p,
