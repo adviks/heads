@@ -2,7 +2,7 @@
 @import url(https://cdn.jsdelivr.net/gh/adviks/fontstack/M/m.css);
 :root {
 	--primary: black;
-	--secondary: #ccc;
+	--secondary: #fdfd96;
 	--background: #FFF;
 }
 
@@ -114,7 +114,8 @@ nav li a[href]:not(:hover) {
 	text-decoration: none;
 }
 a:hover {
-	text-decoration: none;
+	text-decoration: underline;
+	text-decoration-color: var(--secondary);
 	color: #555 !important;
 }
 
@@ -205,8 +206,9 @@ button {
 	font-size: calc(45px + (85 - 45) * ((100vw - 300px) / (1600 - 300)));
 	font-weight: 1000;
 	line-height: 1;
-	/* letter-spacing: -3px; */
-	letter-spacing: calc(-1px + (-2 - 1) * ((100vw - 300px) / (1600 - 300)));
+	letter-spacing: -2px;
+	/* letter-spacing: calc(-1px + (-2 - 1) * ((100vw - 300px) / (1600 - 300))); */
+	margin-bottom: 0;
 }
 
 .postListTitle:hover{
