@@ -1,5 +1,5 @@
 @import url(https://rsms.me/inter/inter.css);
-@import url(https://cdn.jsdelivr.net/gh/adviks/fontstack/fs.css);
+@import url(https://cdn.jsdelivr.net/gh/adviks/fontstack@master/fs.css);
 :root {
 	--primary: black;
 	--secondary: #12844D;
@@ -21,7 +21,7 @@ body {
 	height: 100vh;
 	margin: 0 auto;
 	grid-template-rows: auto 1fr auto;
-	max-width: 37.5em;
+	max-width: 65ch;
 }
 
 /* main {
@@ -202,7 +202,7 @@ button {
 
 
 .postTitle{
-	font-family: 'Noe Display','Mermaid', Times, serif;
+	font-family:'Mermaid', Times, serif;
 	font-size: calc(45px + (85 - 45) * ((100vw - 300px) / (1600 - 300)));
 	font-weight: 1000;
 	line-height: 1;
@@ -215,9 +215,10 @@ button {
 	text-decoration: none;
 }
 .homeTitle{
-	font-family: "Noe Display", "Mermaid", Times, serif; 
+	font-family: "Mermaid", Times, serif; 
 	font-weight: 900;
-	font-size: calc(65px + (90 - 65) * ((100vw - 300px) / (1600 - 300)));
+	font-size: calc(55px + (90 - 55) * ((100vw - 300px) / (1600 - 300)));
+	margin: 20px 0;
 
 }
 
