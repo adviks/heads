@@ -10,8 +10,9 @@ section: post
   <h1 class="postTitle">{{ title }}</h1>
   <p>
     <small>
-      <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time> by <a href="/authors/{{ author | slug }}/">{{ author }}</a>
+      <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time> 
     </small>
+    <!-- by <a href="/authors/{{ author | slug }}/">{{ author }}</a> -->
   </p>
 
   {{ layoutContent | safe }}

@@ -202,7 +202,7 @@ button {
 
 
 .postTitle{
-	font-family: 'Mermaid', Times, serif;
+	font-family: 'Noe Display','Mermaid', Times, serif;
 	font-size: calc(45px + (85 - 45) * ((100vw - 300px) / (1600 - 300)));
 	font-weight: 1000;
 	line-height: 1;
@@ -215,7 +215,7 @@ button {
 	text-decoration: none;
 }
 .homeTitle{
-	font-family: "Mermaid", Times, serif; 
+	font-family: "Noe Display", "Mermaid", Times, serif; 
 	font-weight: 900;
 	font-size: calc(65px + (90 - 65) * ((100vw - 300px) / (1600 - 300)));
 
