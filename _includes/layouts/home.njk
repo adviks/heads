@@ -2,5 +2,26 @@
 layout: layouts/base.njk
 section: home
 ---
-
+<h2 class="homeTitle">{{ metadata.salut }}</h2>
 {{ layoutContent | safe }}
+
+<h2 style="color: #000;margin: 5px auto;font-weight: 800;">Articles</h2>
+{% for post in collections.post | reverse %}
+<article{% if post.url == url %} data-current="current item"{% endif %}>
+
+			<h4 style="display: inline;font-weight: 600;">
+				<a class="postListTitle" href="{{ post.url | url }}">
+					{% if post.data.title %}
+						{{ post.data.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
+			</h4>
+				<time datetime="{{ post.date | machineDate }}">
+					<small class="dateTime">{{ post.date | readableDate }} </small>
+				</time>
+                <br>
+				<!-- by <a href="/authors/{{ post.data.author | slug }}/">{{ post.data.author }}</a> -->
+            </article>
+                {% endfor %}

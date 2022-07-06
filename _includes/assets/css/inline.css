@@ -1,7 +1,8 @@
 @import url(https://rsms.me/inter/inter.css);
+@import url(https://cdn.jsdelivr.net/gh/adviks/fontstack/M/m.css);
 :root {
 	--primary: black;
-	--secondary: grey;
+	--secondary: #ccc;
 	--background: #FFF;
 }
 
@@ -20,12 +21,11 @@ body {
 	height: 100vh;
 	margin: 0 auto;
 	grid-template-rows: auto 1fr auto;
-	background-color: var(--background);
-}
-
-main {
 	max-width: 37.5em;
 }
+
+/* main {
+} */
 
 p,
 pre,
@@ -54,7 +54,7 @@ footer {
 }
 
 main {
-	padding-bottom: 2em;
+	padding-bottom: 0;
 }
 
 main :first-child,
@@ -89,39 +89,42 @@ header > em {
 }
 
 /* Header Nav */
-header nav ul {
+nav ul {
 	padding: 0;
 	list-style: none;
 }
 
-header nav ul :first-child {
+nav ul :first-child {
 	margin-left: 0;
+	padding-left: 0;
 }
 
-header nav li {
+nav li {
 	display: inline-block;
 	margin: 0 .25em;
 }
 
-header nav li a {
+nav li a {
+	color: #555!important;
 	padding: .25em .5em;
 	border-radius: .25em;
 }
 
-header nav li a[href]:not(:hover) {
+nav li a[href]:not(:hover) {
 	text-decoration: none;
 }
+a:hover {
+	text-decoration: none;
+	color: #555 !important;
+}
 
-header nav li a[data-current="current item"] {
+nav li a[data-current="current item"] {
 	background-color: white;
 }
 
 /* Posts List */
 article {
-	margin-bottom: 1em;
-	padding-bottom: 1em;
-	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid var(--secondary);
+	margin-bottom: 5px;
 }
 
 main > section > article > * {
@@ -175,7 +178,7 @@ button {
   padding: 1em;
   margin-bottom: 1em;
 	font-size: 1rem;
-	font-family: "Avenir", "Avenir Next", sans-serif;
+	font-family: Inter, Arial, Helvetica, sans-serif;
 }
 
 input,
@@ -194,4 +197,36 @@ button {
 	:root {
 		font-size: 1.1rem;
 	}
+}
+
+
+.postTitle{
+	font-family: 'Mermaid', Times, serif;;
+	font-size: calc(45px + (85 - 45) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 1000;
+	line-height: 1;
+	/* letter-spacing: -3px; */
+	letter-spacing: calc(-1px + (-2 - 1) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.postListTitle:hover{
+	text-decoration: none;
+}
+/* .homeTitle{
+	font-family: 'Mermaid',Times, serif; 
+	font-weight: 900;
+} */
+
+footer{
+	margin-top: 10px;
+	border-top: 1px solid #ddd;
+	padding: 10px 0;
+	color:#777;
+	font-size: 14px;
+}
+
+.dateTime{
+	margin-left: 10px;
+	color: #555;
+
 }
